@@ -1,12 +1,13 @@
 @extends('layouts.app')
 @section('body')
-    <a href="." class="btn btn-default">Go Back</a>
-    <h1>{{$post->title}}</h1>
+    <a href="." class="btn btn-default">Go Back</a><br><br>
+    <h1>{{$post->title}}</h1><br>
+    <img style="width:100%" src="../public/storage/cover_images/{{$post->cover_image}}"><br><br>
     <div>
         {!! $post->body !!}
     </div>
     <hr>
-    <small>By : {{ $post->user->name }}</small><br>
+    <medium>Author : {{ $post->user->name }}</medium><br>
     <small>Written on: {{ $post->created_at}}</small>
     <br>
     
