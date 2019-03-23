@@ -3,7 +3,7 @@
 <h1>Hello sankalp</h1>
 
 <br>
-<?php print_r($mysub);?>
+<?php print_r($comment);?>
 <br>
 
 @if($mymarks ==10)

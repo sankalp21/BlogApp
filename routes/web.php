@@ -16,6 +16,8 @@ Route::get('about','PageControler@about');
 
 Route::resource('posts','PostsController');
 
+Route::resource('posts/comments','CommentController');
+
 
 //Route::get('sayhello','HelloController@index');
 //
